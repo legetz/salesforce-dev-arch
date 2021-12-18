@@ -4,33 +4,14 @@ TMP_DIR="${HOME}/salesforce-dev-arch-tmp"
 rm -rf ${TMP_DIR}
 mkdir ${TMP_DIR}
 
-# Install essential commands
+# Install essential commands using pacman
 bash 1-core.sh
 
-# Package list - yay
-PKGS=(
-'firefox'
-'github-desktop-bin' # Github GUI Desktop
-'google-chrome'
-'slack'
-'teams'
-'timeshift' # Linux backup tool, uses rsync
-'visual-studio-code-bin'
-)
+# Install packages using yay
+bash 2-packages.sh
 
-for PKG in "${PKGS[@]}"; do
-    yay -S --needed --noconfirm $PKG
-done
-
-echo "Installing VSCode extensions..." && sleep 3
-
-# Install extensions for VSCode
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension salesforce.salesforcedx-vscode
-code --install-extension eamodio.gitlens
-code --install-extension mhutchie.git-graph
-code --install-extension chuckjonas.apex-pmd
-code --install-extension esbenp.prettier-vscode
+# Install IDE (VSCode or Intellij Idea)
+bash 3-ide.sh
 
 command -v sfdx >/dev/null && echo "SFDX found, skipping install" || {
   echo "Installing latest stable SFDX"
