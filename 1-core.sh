@@ -4,6 +4,7 @@
 PKGS=(
 'base-devel' # Package group for building/compiling
 'git'
+'nodejs' # Node.Js, latest version
 'jre11-openjdk' # OpenJDK Java 11 runtime
 'yay' # Yet another yogurt. Pacman wrapper and AUR helper
 )
