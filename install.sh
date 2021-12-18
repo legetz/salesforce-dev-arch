@@ -6,11 +6,11 @@ bash 1-core.sh
 # Package list - yay
 PKGS=(
 'firefox'
-'github-desktop-bin' # Github Desktop sync
+'github-desktop-bin' # Github GUI Desktop
 'google-chrome' # Google Chrome for best Salesforce compatibility
 'slack'
 'teams'
-'timeshift'
+'timeshift' # Linux backup tool, uses rsync
 'visual-studio-code-bin'
 )
 
