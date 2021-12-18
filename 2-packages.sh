@@ -18,5 +18,9 @@ done
 # Activate nvm command
 source /usr/share/nvm/init-nvm.sh
 
+# Install both latest stable and LTS Node.js versions
+nvm install node
+nvm install --lts
+
 # Add nvm init to shell startup
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
