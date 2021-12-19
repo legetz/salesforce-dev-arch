@@ -1,17 +1,19 @@
 #!/bin/bash
 
-TMP_DIR="${HOME}/salesforce-dev-arch-tmp"
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+TMP_DIR="${SCRIPT_DIR}/tmp"
 rm -rf ${TMP_DIR}
 mkdir ${TMP_DIR}
 
 # Install essential commands using pacman
-bash 1-core.sh
+bash $SCRIPT_DIR/1-core.sh
 
 # Install packages using yay
-bash 2-packages.sh
+bash $SCRIPT_DIR/2-packages.sh
 
 # Install IDE (VSCode or Intellij Idea)
-bash 3-ide.sh
+bash $SCRIPT_DIR/3-ide.sh
 
 echo "Installing latest stable SFDX"
 rm -rf ${HOME}/sfdx
