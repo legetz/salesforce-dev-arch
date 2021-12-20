@@ -6,6 +6,7 @@ PKGS=(
 'firefox'
 'github-desktop-bin' # Github GUI Desktop
 'google-chrome'
+'meld' # Compare files and directories
 'slack'
 'teams'
 'timeshift' # Linux backup tool, uses rsync
