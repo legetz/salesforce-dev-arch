@@ -7,13 +7,13 @@ rm -rf ${TMP_DIR}
 mkdir ${TMP_DIR}
 
 # Install essential commands using pacman
-bash $SCRIPT_DIR/1-core.sh
+bash $SCRIPT_DIR/src/1-core.sh
 
 # Install packages using yay
-bash $SCRIPT_DIR/2-packages.sh
+bash $SCRIPT_DIR/src/2-packages.sh
 
 # Install IDE (VSCode or Intellij Idea)
-bash $SCRIPT_DIR/3-ide.sh
+bash $SCRIPT_DIR/src/3-ide.sh
 
 echo "Installing latest stable SFDX"
 rm -rf ${HOME}/sfdx
