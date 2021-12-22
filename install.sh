@@ -2,6 +2,7 @@
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+# Make temporary dir for downloads
 TMP_DIR="${SCRIPT_DIR}/tmp"
 rm -rf ${TMP_DIR}
 mkdir ${TMP_DIR}
@@ -15,18 +16,8 @@ bash $SCRIPT_DIR/src/2-packages.sh
 # Install IDE (VSCode or Intellij Idea)
 bash $SCRIPT_DIR/src/3-ide.sh
 
-echo "Installing latest stable SFDX"
-rm -rf ${HOME}/sfdx
-cd ${TMP_DIR}
-wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-mkdir ${HOME}/sfdx
-tar xJf sfdx-linux-x64.tar.xz -C ${HOME}/sfdx --strip-components 1
-# Add sfdx to PATH
-grep "sfdx/bin" ~/.bashrc >/dev/null && echo "sfdx/bin already in PATH, skipping" || {
-  echo "Adding sfdx/bin to PATH at .bashrc"
-  echo "PATH=~/sfdx/bin:$PATH" >> ~/.bashrc
-  source ~/.bashrc
-}
+# Install SFDX CLI
+bash $SCRIPT_DIR/src/4-sfdx.sh ${TMP_DIR}
 
 rm -rf ${TMP_DIR}
 
