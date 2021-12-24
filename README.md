@@ -13,6 +13,7 @@ Here are the most important ones listed:
 - Node.js stable and latest LTS
   - Uses `nvm` to have multiple Node.js versions installed
 - Java 11 runtime
+- [Docker](https://www.docker.com/) container support
 - `yay` package manager
 - meld for file/directory comparisons
 
