@@ -7,7 +7,7 @@ PKGS=(
 'github-desktop-bin' # Github GUI Desktop
 'google-chrome'
 'meld' # Compare files and directories
-'slack'
+'slack-desktop' # Slack Desktop (Beta) for Linux
 'teams'
 'timeshift' # Linux backup tool, uses rsync
 )
