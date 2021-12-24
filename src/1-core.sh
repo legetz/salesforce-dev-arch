@@ -24,5 +24,9 @@ done
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 
+# Add running user to docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 # Set default java version
 sudo archlinux-java set java-11-openjdk
