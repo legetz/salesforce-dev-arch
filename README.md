@@ -16,6 +16,7 @@ Here are the most important ones listed:
 - [Docker](https://www.docker.com/) container support
 - `yay` package manager
 - meld for file/directory comparisons
+- [Spotify](https://spotify.com) music for reaching the coding flow
 
 ## Usage
 

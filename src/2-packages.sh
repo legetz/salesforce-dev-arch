@@ -10,6 +10,7 @@ PKGS=(
 'slack-desktop' # Slack Desktop (Beta) for Linux
 'teams'
 'timeshift' # Linux backup tool, uses rsync
+'spotify' # Music streaming service
 )
 
 for PKG in "${PKGS[@]}"; do
