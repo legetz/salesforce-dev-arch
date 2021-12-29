@@ -27,9 +27,11 @@ salesforce-dev-arch/install.sh
 
 You can safely run installer multiple times. This is handy when for example Salesforce releases newer `sfdx` CLI versions.
 
-## Pre-requirement
+## Pre-requirements
 
-Script will work in any Arch-based distro which has `pacman` package manager available.
+Script will work in any Arch-based distro which has following setted up:
+- `pacman` package manager
+- `git` version control
 
 A) Option for Arch Linux gurus
 
