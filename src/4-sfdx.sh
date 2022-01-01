@@ -13,9 +13,7 @@ tar xJf sfdx-linux-x64.tar.xz -C ${HOME}/sfdx --strip-components 1
 grep "sfdx/bin" ${HOME}/.bashrc >/dev/null || {
   echo "Adding sfdx to PATH at $HOME/.bashrc"
   echo "PATH=$HOME/sfdx/bin:$PATH" >> ~/.bashrc
-  source ~/.bashrc
 }
 rm sfdx-linux-x64.tar.xz
 
-echo "Installed latest stable SFDX:"
-sfdx -v
+echo "Installed latest stable SFDX"

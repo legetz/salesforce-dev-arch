@@ -24,4 +24,5 @@ bash $SCRIPT_DIR/src/5-aliases.sh
 
 rm -rf ${TMP_DIR}
 
-echo -e "\nSUCCESS, all ready for coding. May the force be with you!"
+echo -e "\nAll ready for coding once you open new terminal session."
+echo "May the force be with you!"
