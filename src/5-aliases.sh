@@ -18,6 +18,11 @@ function org-connect-sandbox() {
 	sfdx force:auth:web:login \-r https://test.salesforce.com \-a $1;
 }
 
+# Connect to production, first parameter will be the alias for the connection
+function org-connect-production() {
+	sfdx force:auth:web:login \-r https://login.salesforce.com \-a $1;
+}
+
 # Open Salesforce org
 function org-open() {
 	sfdx force:org:open \-u $1
