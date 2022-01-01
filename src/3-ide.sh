@@ -1,7 +1,10 @@
 #!/bin/bash
 
 echo '----------------------------------'
-echo 'Choose your IDE: 1=VSCode, 2=IntelliJ IDEA'
+echo 'Choose your IDE: '
+echo '1 = VSCode'
+echo '2 = IntelliJ IDEA'
+echo 'Press any other key to skip IDE installation'
 read -p 'Selection: ' CHOICE
 echo '----------------------------------'
 
