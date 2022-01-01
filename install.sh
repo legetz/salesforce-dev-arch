@@ -19,14 +19,8 @@ bash $SCRIPT_DIR/src/3-ide.sh
 # Install SFDX CLI
 bash $SCRIPT_DIR/src/4-sfdx.sh ${TMP_DIR}
 
-# Add aliases.sh to shell startup
-grep "$HOME/aliases.sh" ~/.bashrc >/dev/null && echo "aliases.sh already configured, skipping" || {
-  # Copy aliases into home folder
-  cp $SCRIPT_DIR/src/5-aliases.sh $HOME/aliases.sh
-
-  echo "Adding aliases.sh to .bashrc"
-  echo "source $HOME/aliases.sh" >> ~/.bashrc
-}
+# Configure handy aliases and helper functions
+bash $SCRIPT_DIR/src/5-aliases.sh
 
 rm -rf ${TMP_DIR}
 
