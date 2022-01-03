@@ -45,3 +45,12 @@ B) Option for people favouring installation wizard
   - [KDE](https://manjaro.org/downloads/official/kde/)
   - [GNOME](https://manjaro.org/downloads/official/gnome/)
 - Download and install minimal version
+
+## Extra tips
+
+### Swap partition
+
+Enable swap partition by executing these steps:
+* Locate your swap partition name: `sudo lsblk`
+* Activate swap (assuming your partition name being /dev/sda3): `sudo swapon /dev/sda3`
+* Enable swap automatically on boot: `sudo bash -c "echo UUID=$(lsblk -no UUID /dev/sda3) none swap defaults 0 0 >> /etc/fstab"`
