@@ -7,6 +7,7 @@ PKGS=(
 'jre11-openjdk' # OpenJDK Java 11 runtime
 'yay' # Yet another yogurt. Pacman wrapper and AUR helper
 'docker' # Docker container support
+'terraform' # Terraform for deployments to AWS
 )
 
 # Activate loop module for Docker
