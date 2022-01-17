@@ -17,6 +17,9 @@ Here are the most important ones listed:
 - `yay` package manager
 - meld for file/directory comparisons
 - [Spotify](https://spotify.com) music for reaching the coding flow
+- Development related to AWS/Azure/GCP
+  - [Serverless](https://www.serverless.com/) for Lambda deployments
+  - [Terraform](https://www.terraform.io/) for infrastructure as code
 
 ## Usage
 
