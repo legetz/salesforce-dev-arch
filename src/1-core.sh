@@ -8,7 +8,8 @@ PKGS=(
 'nodejs' # Node.Js, latest version
 'jre11-openjdk' # OpenJDK Java 11 runtime
 'yay' # Yet another yogurt. Pacman wrapper and AUR helper
-'terraform' # Terraform for deployments to AWS
+'serverless' # Serverless framework for deployments to AWS/Azure/GCP
+'terraform' # Terraform for deployments to AWS/Azure/GCP
 )
 
 # Update pacman package databases
