@@ -21,6 +21,21 @@ Here are the most important ones listed:
   - [Serverless](https://www.serverless.com/) for Lambda deployments
   - [Terraform](https://www.terraform.io/) for infrastructure as code
 
+## Aliases
+Installer will add bunch of handy aliases/functions to speed up your Force.com CLI development.
+
+Here are the most important ones:
+- `org-connect-sandbox ORG-NAME` and `org-connect-production ORG-NAME` let's you quickly connect to new org
+- `org-open ORG-NAME` opens the org
+- `metadata-retrieve ORG-NAME` fetches the metadata using package.xml and unzips the results
+- `sfdx-retrieve ORG-NAME` fetches the metadata using `manifest/package.xml` into SFDX formatted project structure
+- `metadata-deploy ORG-NAME` deploys unpackaged.zip and runs all local tests in an org, `metadata-validate ORG-NAME` only validates the same
+- `metadata-deploy-specified-tests SomeTestClass ORG-NAME` deploys unpackaged.zip and runs given tests in an org
+- `metadata-quick-deploy ORG-NAME` deploys unpackaged.zip and skips the tests. Handy for quick sandbox deployments
+- `org-limits ORG-NAME` shows various org limits
+
+Check all aliases and functions at `src/aliases.sh`
+
 ## Usage
 
 ```
