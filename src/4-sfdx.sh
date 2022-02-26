@@ -10,9 +10,9 @@ wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/
 mkdir ${HOME}/sfdx
 tar xJf sfdx-linux-x64.tar.xz -C ${HOME}/sfdx --strip-components 1
 # Add sfdx to PATH
-grep "sfdx/bin" ${HOME}/.bashrc >/dev/null || {
-  echo "Adding sfdx to PATH at $HOME/.bashrc"
-  echo "PATH=$HOME/sfdx/bin:$PATH" >> ~/.bashrc
+grep "sfdx/bin" ${HOME}/.zshrc >/dev/null || {
+  echo "Adding sfdx to PATH at $HOME/.zshrc"
+  echo "PATH=$HOME/sfdx/bin:$PATH" >> ~/.zshrc
 }
 rm sfdx-linux-x64.tar.xz
 

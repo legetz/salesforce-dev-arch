@@ -25,7 +25,7 @@ nvm install node
 nvm install --lts
 
 # Add init-nvm.sh to shell startup
-grep init-nvm ~/.bashrc >/dev/null && echo "init-nvm already configured, skipping" || {
-  echo "Adding init-nvm to .bashrc"
-  echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
+grep init-nvm ~/.zshrc >/dev/null && echo "init-nvm already configured, skipping" || {
+  echo "Adding init-nvm to .zshrc"
+  echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 }
