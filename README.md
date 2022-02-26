@@ -13,6 +13,7 @@ Here are the most important ones listed:
 - Node.js stable and latest LTS
   - Uses `nvm` to have multiple Node.js versions installed
 - Java 11 runtime
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) to make you feel like 10x developer in CLI
 - [Docker](https://www.docker.com/) container support
 - `yay` package manager
 - meld for file/directory comparisons

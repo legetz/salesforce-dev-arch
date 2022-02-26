@@ -2,6 +2,9 @@
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+# Install oh-my-zsh and change shell to ZSH
+bash $SCRIPT_DIR/1-oh-my-zsh.sh
+
 # Package list - pacman
 PKGS=(
 'base-devel' # Package group for building/compiling
