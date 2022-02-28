@@ -16,6 +16,7 @@ PKGS=(
 'yay' # Yet another yogurt. Pacman wrapper and AUR helper
 'serverless' # Serverless framework for deployments to AWS/Azure/GCP
 'terraform' # Terraform for deployments to AWS/Azure/GCP
+'vlc' # VLC multimedia player
 )
 
 for PKG in "${PKGS[@]}"; do

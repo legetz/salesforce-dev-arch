@@ -21,6 +21,7 @@ Here are the most important ones listed:
 - Development related to AWS/Azure/GCP
   - [Serverless](https://www.serverless.com/) for Lambda deployments
   - [Terraform](https://www.terraform.io/) for infrastructure as code
+- [VLC](https://www.videolan.org) media player
 
 ## Aliases
 Installer will add bunch of handy aliases/functions to speed up your Force.com CLI development.
