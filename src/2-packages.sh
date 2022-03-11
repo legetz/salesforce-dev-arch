@@ -8,7 +8,6 @@ PKGS=(
 'google-chrome'
 'meld' # Compare files and directories
 'slack-desktop' # Slack Desktop (Beta) for Linux
-'teams'
 'timeshift' # Linux backup tool, uses rsync
 'spotify' # Music streaming service
 )

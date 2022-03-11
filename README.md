@@ -9,7 +9,7 @@ Here are the most important ones listed:
 - VSCode or IntelliJ Idea for your preferred IDE
 - `sfdx` and `sf` CLI commands
 - Firefox, Google Chrome
-- Slack, Microsoft Teams
+- Slack
 - Node.js stable and latest LTS
   - Uses `nvm` to have multiple Node.js versions installed
 - Java 11 runtime
